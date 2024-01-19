@@ -1,0 +1,14 @@
+@using BOL;
+
+<h1>Employees List</h1>
+
+@{
+    List<Employee> employees=Model;
+        foreach(Employee emp in employees){
+            <p>
+                @emp.Id @emp.Firstname @emp.Lastname @emp.Email @emp.Address
+
+            </p>
+            
+        }
+}

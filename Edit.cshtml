@@ -1,0 +1,26 @@
+@using BOL;
+
+@{
+    ViewData["Title"] = "Edit Page";
+}
+
+<h1>Edit Employee Details</h1>
+
+ <form method="post" asp-controller="Employees" asp-action="Edit">
+    <label>Id:</label>
+    <input type="text" name="Id" value="@Model.Id" />
+    <br />
+    <label>FirstName:</label>
+    <input type="text" name="fName" value="@Model.FirstName" />
+    <br />
+    <label>LastName:</label>
+     <input type="text" name="lName" value="@Model.LastName" />
+    <br />
+    <label>Email:</label>
+     <input type="text" name="email" value="@Model.Email" />
+      <br>
+      <label>Address:</label>
+      <input type="text" name="address" value="@Model.Address" />
+    <br />
+    <button type="submit">Register</button>
+</form>
